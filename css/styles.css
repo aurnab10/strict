@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+header {
+    background-color: #f6f9f9;
+    padding: 1.5% 0;
+}
+
+header .headWrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 74%;
+    margin: auto;
+}
+
+header .headWrapper .logo {
+    width: 8vw;
+}
+
+header .headWrapper .logo a img {
+    width: 100%;
+    height: auto;
+}
+
+header .headWrapper nav {
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+header .headWrapper nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: end;
+    width: 100%;
+}
+
+header .headWrapper nav ul li {
+    margin-left: auto;
+}
+
+header .headWrapper nav ul li a {
+    color: #2d3950;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: calc(5vw/6);
+}
+
+header .headWrapper nav ul li a:hover {
+    color: #15a4fa;
+}
+
+.banner {
+    position: relative;
+    background-image: url(../images/banner.png);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner .bannerContent {
+    width: 31.25%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.banner .bannerContent h1 {
+
+    font-size: 6.25vw;
+}
+
+.banner .bannerContent span {
+    display: block;
+    height: calc(5vw/48);
+    width: 100%;
+    background-color: #15a4fa;
+}
+
+.banner .bannerContent h4 {
+
+    font-size: calc(25vw/24);
+
+    font-weight: normal;
+
+    margin: 1.875vw 0 3.75vw;
+}
+
+.banner .bannerContent button {
+
+    font-size: calc(25vw/24);
+
+    color: white;
+
+    background: transparent;
+
+    border: calc(5vw/96) solid #15a4fa;
+
+    border-radius: 3%;
+
+    padding: calc(25vw/24) 1.875vw;
+
+    transition: 0.1s ease-in-out;
+}
+
+.banner .bannerContent button:hover {
+    cursor: pointer;
+    background-color: #15a4fa;
+}
