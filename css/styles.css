@@ -390,3 +390,6 @@ footer .socials ul li a {
 footer .socials ul li a i {
   color: #15a4fa;
 }
+footer .socials ul li a i:hover{
+  filter: invert(1);
+}
