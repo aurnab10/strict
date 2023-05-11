@@ -1,18 +1,22 @@
 * {
   font-family: "Lato", sans-serif;
 }
+
 header {
   background-color: #f6f9f9;
 }
+
 .nav-link {
   color: #2d3950;
   font-weight: bold;
   text-transform: uppercase;
   margin-left: 1.5rem;
 }
+
 .nav-link:hover {
   color: #15a4fa;
 }
+
 .banner {
   position: relative;
   background-image: url(../images/banner.png);
@@ -20,6 +24,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .banner .bannerContent {
   position: absolute;
   top: 50%;
@@ -29,16 +34,19 @@ header {
 
   max-width: 600px;
 }
+
 .banner .bannerContent h1 {
   font-size: 100px;
 
   font-weight: bolder;
 }
+
 .banner .bannerContent span {
   display: block;
   height: 2px;
   background-color: #15a4fa;
 }
+
 .banner .bannerContent h4 {
   font-size: 20px;
 
@@ -46,6 +54,7 @@ header {
 
   line-height: 30px;
 }
+
 .banner .bannerContent button {
   font-size: 20px;
 
@@ -57,10 +66,12 @@ header {
 
   transition: 0.5s all ease-in-out;
 }
+
 .banner .bannerContent button:hover {
   cursor: pointer;
   background-color: #15a4fa;
 }
+
 .banner i {
   font-size: 36px;
 
@@ -72,11 +83,13 @@ header {
 
   transform: translate(-50%, -50%);
 }
+
 .description,
 .gallery {
   background-color: #f6f9f9;
   padding-bottom: 116px;
 }
+
 .description h2,
 .pro {
   font-size: 40px;
@@ -87,6 +100,7 @@ header {
 
   z-index: 1;
 }
+
 .description p,
 .work {
   font-size: 20px;
@@ -101,10 +115,12 @@ header {
 
   z-index: 1;
 }
+
 .iconContent .box {
   text-align: center;
   margin-bottom: 65px;
 }
+
 .iconContent .box .icon {
   background: rgb(72, 186, 255);
 
@@ -148,6 +164,7 @@ header {
 
   align-items: center;
 }
+
 .iconContent .box .icon i {
   color: #ffffff;
   font-size: 42px;
@@ -160,6 +177,7 @@ header {
 
   margin-bottom: 20px;
 }
+
 .iconContent .box p {
   font-size: 16px;
 
@@ -169,10 +187,12 @@ header {
 
   margin-bottom: 0;
 }
+
 .item {
   position: relative;
   margin-bottom: 24px;
 }
+
 .item::before {
   content: "";
   top: 50%;
@@ -207,9 +227,11 @@ header {
   cursor: pointer;
   transition: 0.5s all ease-in-out;
 }
+
 .item:hover .imageIcon {
   opacity: 1;
 }
+
 .imageIcon button {
   width: 42px;
 
@@ -259,17 +281,54 @@ header {
   margin-bottom: 0;
   padding-bottom: 20px;
 }
-.contact input {
+.contact .info input {
   background-color: transparent;
+  border-radius: 1%;
+  border-color: #999999;
+  border-style: ridge;
+  color: #ffffff;
 }
-.contact textarea {
+.contact .info input:focus {
+  font-size: 16px;
+  color: #ffffff;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
   background-color: transparent;
+  border-bottom: 1px solid #15a4fa;
 }
-.contact input::placeholder {
+.contact .info textarea {
+  background-color: transparent;
+  border-radius: 1%;
+  border-color: #999999;
+  border-style: ridge;
+  color: #ffffff;
+}
+.contact .info textarea:focus {
+  font-size: 16px;
+  color: #ffffff;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  background-color: transparent;
+  border-bottom: 1px solid #15a4fa;
+}
+.contact .info input::placeholder {
   color: #999999;
 }
-.contact textarea::placeholder {
+.contact .info textarea::placeholder {
   color: #999999;
+}
+.contact input[type="checkbox"]::before {
+  content: "";
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  margin-bottom: 10px;
+  background-color: #15a4fa;
+  opacity: 0.3;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+.contact input[type="checkbox"]:checked::before {
+  opacity: 0;
 }
 .sub {
   display: flex;
@@ -290,7 +349,7 @@ header {
 .contact .btn-send {
   color: #ffffff;
   border: 1px solid #15a4fa;
-  border-radius: 3%;
+  border-radius: 1%;
   width: 140px;
   height: 45px;
   transition: 0.5s all ease-in-out;
@@ -319,10 +378,12 @@ footer .socials ul {
   list-style: none;
   margin: auto;
 }
+
 footer .socials ul li {
   font-size: 40px;
   font-weight: 400;
 }
+
 footer .socials ul li a {
   text-decoration: none;
 }
