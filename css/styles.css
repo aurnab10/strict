@@ -35,10 +35,28 @@ header {
   max-width: 600px;
 }
 
-.banner .bannerContent h1 {
-  font-size: 100px;
+@media (max-width: 300px) {
+  .banner .bannerContent h1 {
+    font-size: 60px;
 
-  font-weight: bolder;
+    font-weight: bolder;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 360px) {
+  .banner .bannerContent h1 {
+    font-size: 80px;
+
+    font-weight: bolder;
+  }
+}
+
+@media (min-width: 360px) {
+  .banner .bannerContent h1 {
+    font-size: 100px;
+
+    font-weight: bolder;
+  }
 }
 
 .banner .bannerContent span {
