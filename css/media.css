@@ -1,0 +1,19 @@
+@media (min-width: 360px) {
+    .banner .bannerContent h1 {
+        font-size: 6.25rem;  
+        font-weight: bolder;
+    }
+}
+@media (max-width: 767px) {
+    .nav-link {
+        margin-left: 0;
+        padding-bottom: 5px !important;
+    }
+    .nav-item {
+        display: flex;
+        padding-bottom: 0;
+    }
+    .navbar-nav{
+        margin-top: 24px;
+    }
+}
