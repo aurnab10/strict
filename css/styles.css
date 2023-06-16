@@ -17,6 +17,72 @@ header {
   color: #15a4fa;
 }
 
+.toggle {
+  cursor: pointer;
+  overflow: hidden;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+}
+
+.line-toggle {
+  position: absolute;
+  display: block;
+  width: 36px;
+  height: 4px;
+  background: #2d3950;
+  border-radius: 5px;
+  transition: all 0.6s;
+}
+
+.line-toggle:first-child {
+  transform: translateY(-12px) translateX(0);
+  transition-delay: 0s;
+}
+
+.toggle .line-toggle:nth-child(2) {
+  transition-delay: 0.12s;
+}
+
+.line-toggle:last-child {
+  transform: translateY(12px) translateX(0);
+  transition-delay: 0s;
+}
+
+.toggle.activate .line-toggle:first-child {
+  background: #15a4fa;
+  transform: translateY(0) translateX(0) rotate(45deg);
+  width: 50px;
+  height: 4px;
+  transition-delay: 0.1s;
+}
+
+.toggle.activate .line-toggle:nth-child(2) {
+  transform: translateX(110px);
+  transition-delay: 0s;
+}
+
+.toggle.activate .line-toggle:last-child {
+  background: #15a4fa;
+  transform: translateY(0) translateX(0) rotate(314deg);
+  width: 50px;
+  height: 4px;
+  transition-delay: 0.1s;
+}
+
+.navbar-toggler {
+  border: none;
+  padding: 0;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
 .banner {
   position: relative;
   background-image: url(../images/banner.png);
@@ -35,48 +101,10 @@ header {
   max-width: 600px;
 }
 
-/* .banner .bannerContent h1 {
-  font-size: 100px;
-
-  font-weight: bolder;
-} */
-
-/* @media (max-width: 300px) {
-  .banner .bannerContent h1 {
-    font-size: 60px;
-
-    font-weight: bolder;
-  }
-}
-
-@media (min-width: 300px) and (max-width: 360px) {
-  .banner .bannerContent h1 {
-    font-size: 80px;
-
-    font-weight: bolder;
-  }
-}
-
-@media (min-width: 360px) {
-  .banner .bannerContent h1 {
-    font-size: 100px;
-
-    font-weight: bolder;
-  }
-} */
-
 .banner .bannerContent h1 {
   font-size: calc(4.425rem + 2.1vw);
 
   font-weight: bolder;
-}
-
-@media (min-width: 360px) {
-  .banner .bannerContent h1 {
-    font-size: 6.25rem;
-
-    font-weight: bolder;
-  }
 }
 
 .banner .bannerContent span {
@@ -412,7 +440,7 @@ footer .copy {
 }
 footer .socials ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   list-style: none;
   margin: auto;
   padding: 0;
