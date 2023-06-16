@@ -97,13 +97,11 @@ header {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-
   max-width: 600px;
 }
 
 .banner .bannerContent h1 {
   font-size: calc(4.425rem + 2.1vw);
-
   font-weight: bolder;
 }
 
@@ -115,21 +113,15 @@ header {
 
 .banner .bannerContent h4 {
   font-size: 20px;
-
   font-weight: normal;
-
   line-height: 30px;
 }
 
 .banner .bannerContent button {
   font-size: 20px;
-
   background: transparent;
-
   border: 1px solid #15a4fa;
-
   border-radius: 5px;
-
   transition: 0.5s all ease-in-out;
 }
 
@@ -140,45 +132,31 @@ header {
 
 .banner i {
   font-size: 36px;
-
   position: absolute;
-
   left: 50%;
-
   top: 90%;
-
   transform: translate(-50%, -50%);
 }
 
 .description,
 .gallery {
   background-color: #f6f9f9;
-  padding-bottom: 116px;
+  padding-bottom: 100px;
 }
 
 .description h2,
 .pro {
   font-size: 40px;
-
-  padding: 80px 0 30px;
-
+  padding: 74px 0 30px;
   font-weight: normal;
-
   z-index: 1;
 }
 
-.description p,
-.work {
+.para {
   font-size: 20px;
-
-  padding-bottom: 112px;
-
   line-height: 32px;
-
   color: #999999;
-
   margin-bottom: 0;
-
   z-index: 1;
 }
 
@@ -189,7 +167,6 @@ header {
 
 .iconContent .box .icon {
   background: rgb(72, 186, 255);
-
   background: -moz-linear-gradient(
     left,
     rgb(72, 186, 255) 0%,
@@ -197,7 +174,6 @@ header {
     rgb(95, 195, 255) 50%,
     rgb(95, 195, 255) 100%
   );
-
   background: -webkit-linear-gradient(
     left,
     rgb(72, 186, 255) 0%,
@@ -205,7 +181,6 @@ header {
     rgb(95, 195, 255) 50%,
     rgb(95, 195, 255) 100%
   );
-
   background: linear-gradient(
     to right,
     rgb(72, 186, 255) 0%,
@@ -213,21 +188,14 @@ header {
     rgb(95, 195, 255) 50%,
     rgb(95, 195, 255) 100%
   );
-
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#48baff', endColorstr='#5fc3ff', GradientType=1);
 
   width: 100px;
-
   height: 100px;
-
   margin: 72px auto 36px;
-
   border-radius: 5px;
-
   display: flex;
-
   justify-content: center;
-
   align-items: center;
 }
 
@@ -238,19 +206,18 @@ header {
 
 .iconContent .box h3 {
   font-weight: normal;
-
   font-size: 23px;
-
   margin-bottom: 20px;
+}
+
+.gallery .para {
+  padding-bottom: 100px;
 }
 
 .iconContent .box p {
   font-size: 16px;
-
   color: #999999;
-
   line-height: 24px;
-
   margin-bottom: 0;
 }
 
@@ -300,15 +267,10 @@ header {
 
 .imageIcon button {
   width: 42px;
-
   height: 42px;
-
   background: transparent;
-
   border: 1px solid #ffffff;
-
   border-radius: 5px;
-
   transition: 0.5s all ease-in-out;
 }
 
